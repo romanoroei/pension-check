@@ -1,1 +1,151 @@
 # pension-check
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>האם הפנסיה שלכם במסלול הנכון?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Assistant', sans-serif;
+            background-color: #f0f4f8; /* Light blue-gray background */
+        }
+        .card-gradient {
+            background: linear-gradient(145deg, #ffffff, #e6eef5);
+        }
+        .highlight-text {
+            color: #005a9c; /* Dark blue for highlights */
+        }
+        .accent-color {
+            color: #f59e0b; /* Amber/Gold for accent */
+        }
+        .button-primary {
+            background-color: #005a9c;
+            transition: background-color 0.3s ease;
+        }
+        .button-primary:hover {
+            background-color: #004170;
+        }
+        .icon-bg {
+            background-color: rgba(0, 90, 156, 0.1);
+        }
+    </style>
+</head>
+<body class="p-4 sm:p-6 md:p-8">
+    <div class="max-w-4xl mx-auto bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <div class="p-6 md:p-10 bg-gray-900 text-white text-center">
+            <h1 class="text-3xl md:text-5xl font-bold mb-2">
+                אתם עלולים להפסיד <span class="text-yellow-400">3,000,000 ₪</span> בפנסיה!
+            </h1>
+            <p class="text-lg md:text-xl text-gray-300">גלו איך בחירה פשוטה יכולה לשנות את עתידכם הפיננסי.</p>
+        </div>
+
+        <div class="p-6 md:p-8">
+            <!-- The Problem Section -->
+            <div class="text-center mb-10">
+                <i data-lucide="help-circle" class="mx-auto h-12 w-12 text-gray-400 mb-4"></i>
+                <h2 class="text-2xl font-bold text-gray-800 mb-2">"באיזה מסלול השקעה הפנסיה שלך?"</h2>
+                <p class="text-lg text-gray-600 max-w-2xl mx-auto">רוב האנשים עונים: <span class="font-semibold">"מאיפה לי לדעת?"</span>. חוסר הידיעה הזה יכול לעלות ביוקר. מאוד.</p>
+            </div>
+
+            <!-- The Comparison Section -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-10">
+                <!-- General Track -->
+                <div class="card-gradient p-6 rounded-xl shadow-lg border border-gray-200">
+                    <div class="flex items-center mb-4">
+                        <div class="p-3 rounded-full icon-bg mr-4">
+                            <i data-lucide="sliders-horizontal" class="h-8 w-8 highlight-text"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold highlight-text">המסלול הכללי</h3>
+                            <p class="text-gray-500">ברירת המחדל של רובנו</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 text-lg">
+                        <p class="flex items-center"><i data-lucide="line-chart" class="h-5 w-5 ml-2 accent-color"></i>תשואה שנתית ממוצעת: <span class="font-bold mx-1">6%</span></p>
+                        <p class="text-2xl md:text-3xl font-bold text-center py-4">צבירה לגיל 67:</p>
+                        <p class="text-4xl md:text-5xl font-bold text-center highlight-text">~5,800,000 ₪</p>
+                    </div>
+                </div>
+
+                <!-- Stocks Track -->
+                <div class="bg-blue-900 text-white p-6 rounded-xl shadow-2xl relative overflow-hidden">
+                     <div class="absolute -top-10 -right-10 w-32 h-32 bg-white/10 rounded-full"></div>
+                     <div class="absolute bottom-4 left-4 w-16 h-16 bg-white/10 rounded-lg transform rotate-12"></div>
+                    <div class="flex items-center mb-4 relative z-10">
+                        <div class="p-3 rounded-full bg-yellow-400/20 mr-4">
+                            <i data-lucide="trending-up" class="h-8 w-8 text-yellow-400"></i>
+                        </div>
+                        <div>
+                            <h3 class="text-2xl font-bold text-yellow-400">מסלול מניות</h3>
+                            <p class="text-blue-200">פוטנציאל צמיחה גבוה יותר</p>
+                        </div>
+                    </div>
+                    <div class="space-y-3 text-lg relative z-10">
+                        <p class="flex items-center"><i data-lucide="line-chart" class="h-5 w-5 ml-2 text-yellow-400"></i>תשואה שנתית ממוצעת: <span class="font-bold mx-1">8%</span></p>
+                        <p class="text-2xl md:text-3xl font-bold text-center py-4">צבירה לגיל 67:</p>
+                        <p class="text-4xl md:text-5xl font-bold text-center text-yellow-400">~8,980,000 ₪</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Difference -->
+            <div class="bg-yellow-400 text-gray-900 p-6 rounded-xl text-center mb-10 shadow-lg">
+                <h3 class="text-2xl md:text-4xl font-bold">ההפרש: יותר מ-3,000,000 ₪!</h3>
+                <p class="text-lg md:text-xl mt-2">זה הכוח העצום של <span class="font-semibold">ריבית דריבית</span> על פני 27 שנים.</p>
+            </div>
+            
+            <!-- Assumptions -->
+            <div class="text-center text-xs text-gray-500 mb-10">
+                *החישוב מבוסס על אדם בן 40, שכר 15,000 ₪, צבירה של 700,000 ₪ והפקדה חודשית של 3,000 ₪.
+            </div>
+
+            <!-- Call to Action -->
+            <div class="bg-gray-50 p-8 rounded-xl border border-gray-200">
+                <h2 class="text-3xl font-bold text-center mb-4 highlight-text">אז מה עושים עכשיו?</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 text-center">
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full icon-bg mb-3">
+                            <i data-lucide="search" class="h-8 w-8 highlight-text"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">1. בודקים</h4>
+                        <p class="text-gray-600">התקשרו לחברת הביטוח או היכנסו לאזור האישי ובדקו באיזה מסלול אתם נמצאים.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full icon-bg mb-3">
+                            <i data-lucide="brain-circuit" class="h-8 w-8 highlight-text"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">2. שוקלים</h4>
+                        <p class="text-gray-600">אם אתם מתחת לגיל 50 והמסלול סולידי מדי, שקלו מעבר למסלול עם חשיפה מנייתית גבוהה יותר.</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full icon-bg mb-3">
+                            <i data-lucide="user-check" class="h-8 w-8 highlight-text"></i>
+                        </div>
+                        <h4 class="font-bold text-lg mb-1">3. מתייעצים</h4>
+                        <p class="text-gray-600">חשוב להתייעץ עם איש מקצוע לפני קבלת החלטה פיננסית משמעותית.</p>
+                    </div>
+                </div>
+                <div class="mt-8 text-center">
+                    <a href="https://www.ar-fo.co.il/partners/roei-romano" target="_blank" class="inline-block button-primary text-white font-bold text-lg py-3 px-8 rounded-lg shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all">
+                        רוצה להתייעץ? לחץ כאן
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <footer class="text-center p-4 bg-gray-100 text-gray-500 text-sm">
+            <p>אין לראות באמור ייעוץ השקעות או תחליף לייעוץ אישי המותאם לצרכי הלקוח.</p>
+        </footer>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
